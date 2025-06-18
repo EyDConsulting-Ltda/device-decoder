@@ -1,0 +1,120 @@
+# ========================================
+# GLOBAL IGNORE RULES
+# ========================================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+*.orig
+
+# ========================================
+# GIT-SPECIFIC FILES
+# ========================================
+*.lock
+*.patch
+
+# ========================================
+# OS / EDITOR FILES
+# ========================================
+# macOS
+.DS_Store
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Vim
+*.swp
+*.swo
+
+# ========================================
+# NODE.JS PROJECTS
+# ========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ========================================
+# PYTHON PROJECTS
+# ========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# ========================================
+# TEST / COVERAGE FILES
+# ========================================
+coverage/
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.lcov
+
+# ========================================
+# BUILD SYSTEM FILES
+# ========================================
+*.out
+*.class
+*.o
+*.so
+*.a
+*.exe
+
+# ========================================
+# ENVIRONMENT / CONFIGURATION
+# ========================================
+.env
+.env.*
+*.secret
+*.key
+*.pem
+*.crt
+
+# ========================================
+# TEMPORARY / GENERATED FILES
+# ========================================
+*.tmp
+*.log
+*.bak
+*.cache
+.cache/
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# ========================================
+# PERSONAL FILES
+# ========================================
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# END OF FILE
