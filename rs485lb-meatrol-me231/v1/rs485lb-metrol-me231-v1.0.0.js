@@ -6,6 +6,10 @@
 
 /**
  * Comandos AT que se deben configurar en el nodo RS485-LB:
+    -  (Password)          => ****** (Ej:123456, clave por defecto o la seteada por Leider)
+    -  (Modo ABP)          => AT+NJM=0
+    -  (Sub-banda)         => AT+CHE=2
+    -  (Tiempo-sincro)     => AT+TDC=300000 (Ej:5 Min)
     -  (Corriente-Fase)    => AT+COMMAND1= 01 03 03 e8 00 06 ,1 (0x01=ID, 0x03=Command, 0x03f2(1000 Dec)=Tipo de Dato, 0x0006=Valor por defecto)
     -  (Voltaje-Fase)      => AT+COMMAND2= 01 03 03 f2 00 06 ,1 (0x01=ID, 0x03=Command, 0x03f2(1010 Dec)=Tipo de Dato, 0x0006=Valor por defecto)
     -  (Voltaje-Línea)     => AT+COMMAND3= 01 03 03 fc 00 06 ,1 (0x01=ID, 0x03=Command, 0x03f2(1020 Dec)=Tipo de Dato, 0x0006=Valor por defecto)
@@ -128,7 +132,7 @@ function hexToFloat32Groups(dataHex) {
         grupos.push({
           L1: valores[0].toFixed(2),
           L2: valores[1].toFixed(2),
-          L3: valores[2].toFixed(2)
+          L3: valores[2].toFixed(2),
         });
       }
 
